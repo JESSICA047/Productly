@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* css variables */
+
+:root {
+    --main-color: #443;
+    /* horizontal/vertical */
+    --border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+    --border-radius-hover: 4% 95% 6% 95% / 95% 4% 92% 5%;
+    --border: 0.2rem solid var(--main-color);
+    --border-hover: 0.2rem dotted var(--main-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Oxygen", "sans-serif";
+    /* text-transform: capitalize; */
+    /* transition: all 0.2s linear; */
+}
+
+html {
+    /* font-size: 62.5%; */
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+    /* Adjust this value based on your navbar height */
+    /* scroll-padding-top: 7rem; */
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    box-shadow: none;
+    transition: 0.3s;
+    z-index: 999999;
+    /* display: flex; */
+    padding-left: 7.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .navbar {
+    margin-left: 20rem;
+    /* padding: 10px; */
+}
+
+.header .navbar a {
+    margin: 0.5rem;
+    color: var(--main-color);
+    /* font-size: 1rem; */
+    font-weight: 500;
+    /* margin-left: 7rem; */
+}
+
+.header .navbar a:hover {
+    color: orange;
+}
+
+.header button {
+    /* padding: 1rem; */
+    margin: 0.5rem;
+    width: 8rem;
+    height: 3rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    /* height: 3rem; */
+    border-radius: 5px;
+    /* background-color: orange; */
+    font-size: 1rem;
+    font-weight: 900;
+    /* color: white; */
+}
+
+.header .btn0 {
+    border-color: rgb(0, 157, 255);
+    border-width: 0.5px;
+    background-color: white;
+    color: black;
+}
+
+.header .btn1 {
+    border: none;
+    /* border-width: 0.5px; */
+    background-color: orange;
+    color: white;
+}
+
+.header button.btn1:hover {
+    background-color: rgb(208, 147, 34);
+}
+
+.home {
+    margin-top: 10rem;
+    display: flex;
+}
+
+.home-left .heading h1 {
+    font-family: 'Montserrat';
+    font-size: 2.7rem;
+    font-weight: 750;
+    margin-bottom: 2rem;
+}
+
+.home-left .heading p {
+    font-size: 1.3rem;
+    line-height: 2;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.home .home-left button {
+    padding: 1.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.2rem;
+    border-radius: 4px;
+    width: 12rem;
+}
+
+.home .home-left .btn0 {
+    border: none;
+    /* border-width: 0.5px; */
+    background-color: orange;
+    color: white;
+}
+
+.home .home-left .btn1 {
+    border: none;
+    color: orange;
+    text-decoration: underline;
+    background: #fff;
+}
+
+.home .home-right img {
+    width: 35rem;
+}
+
+#product {
+    margin-top: 10rem;
+    margin-bottom: 6rem;
+    /* background-color: rgba(255, 0, 0, 0.082); */
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(247, 226, 210));
+    border-radius: 0% 0% 40% 40%;
+}
+
+#product h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-family: 'Poppins';
+    color: #2f281e;
+    line-height: 1.2;
+}
+
+.products {
+    display: flex;
+    line-height: 2;
+}
+
+.product-image img {
+    /* margin-right: 10rem; */
+    width: 5rem;
+}
+
+.product-image {
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+}
+
+#product button {
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    width: 10rem;
+    color: #fff;
+    background-color: orange;
+    border: none;
+    font-size: 1rem;
+    font-weight: 900;
+    border-radius: 5px;
+}
+
+#customer {
+    /* margin-top: 7rem; */
+}
+
+.customers {
+    display: flex;
+    line-height: 1.5;
+    color: #443;
+    margin-top: 10rem;
+}
+
+.customer-left1 h1 {
+    font-size: 1.3rem;
+}
+
+.customer-left1 h1 span {
+    font-size: 2.2rem;
+    color: black;
+}
+
+.customer-left1 p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    /* font-weight: 500.2; */
+    /* line-height: 3; */
+}
+
+.customer-left1 h3 {
+    color: black;
+}
+
+.customer-right1 {
+    margin-left: 5rem;
+}
+
+.customer-right1 img {
+    /* margin-left: 2rem; */
+    width: 35rem;
+}
+
+.customer-left2 {
+    margin-right: 3rem;
+}
+
+.customer-left2 img {
+    width: 33rem;
+}
+
+.customer-right2 h1 {
+    font-size: 1.3rem;
+}
+
+.customer-right2 h1 span {
+    font-size: 2.2rem;
+    color: black;
+}
+
+.customer-right2 .tick {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 1rem;
+}
+
+/* price section stars here  */
+.price {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgb(247, 226, 210), rgb(255, 255, 255));
+    border-radius: 40% 40% 0% 0%;
+    padding-top: 15rem;
+}
+
+.price h1 {
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: #2f281e;
+}
+
+.price p {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 3rem;
+    color: rgba(47, 142, 179, 0.993);
+}
+
+.price-btn {
+    background-color: rgb(208, 147, 34);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+}
+
+.price-btn:hover{
+    background-color: rgb(253, 136, 2);
+}
+/* price section ends here  */
+
+.resource-image{
+    display: flex;
+}
+
