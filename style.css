@@ -134,12 +134,17 @@ section {
     margin: 0.2rem;
     border-radius: 4px;
     width: 12rem;
+    cursor: pointer;
 }
 
 .home .home-left .btn0 {
     border: none;
     /* border-width: 0.5px; */
     background-color: orange;
+    color: white;
+}
+
+.home .home-left .btn0 a {
     color: white;
 }
 
@@ -150,9 +155,17 @@ section {
     background: #fff;
 }
 
+.home .home-left .btn1 a {
+    /* border: none; */
+    color: orange;
+    text-decoration: underline;
+    /* background: #fff; */
+}
+
 .home .home-right img {
     width: 35rem;
 }
+
 
 #product {
     margin-top: 10rem;
@@ -301,12 +314,154 @@ section {
     border-radius: 5px;
 }
 
-.price-btn:hover{
+.price-btn:hover {
     background-color: rgb(253, 136, 2);
 }
+
 /* price section ends here  */
 
-.resource-image{
+.resource-image {
     display: flex;
+    gap: 1.5rem;
 }
 
+.resource-image .image p {
+    margin-top: 1em;
+}
+
+.resource-image .image p a {
+    color: black;
+    font-weight: 800;
+}
+
+.resource-image .image p a:hover {
+    color: orange;
+    font-size: 1.2rem;
+}
+
+.resource-image .image h2 {
+    margin-bottom: 20rem;
+    color: black;
+    font-family: 'Montserrat';
+    font-weight: 800;
+}
+
+.resources h1 {
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.3em;
+}
+
+.resources p {
+    margin-bottom: 3rem;
+    color: #443;
+
+}
+
+.resource-image .image h2 {
+    margin-top: 0.8em;
+    margin-bottom: 2em;
+    color: #2f281e;
+}
+
+.footer {
+    display: flex;
+    gap: 9.5em;
+    margin-bottom: 5rem;
+}
+
+.footer h3 {
+    margin-bottom: 2rem;
+}
+
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer ul a {
+    color: black;
+}
+
+.footer ul a:hover {
+    color: orange;
+}
+
+.footer-last {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.footer-last p {
+    font-size: 20px;
+    margin-bottom: 0.2em;
+    /* gap: 10rem; */
+}
+
+.footer-last input {
+    width: 15rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.footer-last input:focus {
+    box-shadow: 0px 0px 5px 5px rgba(255, 166, 0, 0.575);
+}
+
+input::placeholder {
+    color: rgba(10, 204, 253, 0.349);
+    font-weight: 900;
+    opacity: 1;
+}
+
+.footer-last button {
+    width: 70%;
+    padding: 0.7em;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+hr.Productly {
+    height: 2px;
+    border: none;
+    /* border-radius: 10px; */
+    /* margin-bottom: 0.5rem; */
+    background-color: #eeececd8;
+}
+
+hr.footer {
+    margin-bottom: 0.1em;
+    height: 2px;
+    border: none;
+    background-color: #eeececd8;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 42rem;
+    /* margin-bottom: 1rem; */
+}
+
+.red-heart {
+    color: red;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .header{
+        position: fixed;
+    }
+
+}
